@@ -1,0 +1,130 @@
+:root {
+  --main-color: #ffff;
+  --secondary-color: #333;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: "Space Mono" Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main section {
+  width: 100%;
+  padding: 25px;
+}
+
+.img-container .error {
+  display: block;
+  font-family: "Inconsolata";
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: -0.08rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+}
+
+.img-container img {
+  display: block;
+  width: 100%;
+  max-width: 540px;
+  max-height: 448px;
+  height: auto;
+  margin: 65px auto 0;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+.text-container h2 {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 4.5rem;
+  letter-spacing: -0.035rem;
+  color: var(--secondary-color);
+}
+
+.text-container p {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  letter-spacing: -0.035em;
+  color: #4f4f4f;
+}
+
+.text-container .btn {
+  margin-top: 30px;
+}
+
+.text-container .btn button {
+  padding: 12px 30px;
+  background-color: var(--secondary-color);
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.225rem;
+  color: var(--main-color);
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+  letter-spacing: -0.035rem;
+  text-transform: uppercase;
+}
+
+.text-container .btn button:hover {
+  background-color: #080808;
+}
+
+.footer {
+  padding: 20px 10px;
+}
+
+.footer p {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  text-align: center;
+  color: #bdbdbb;
+}
+
+@media screen and (min-width: 1280px) {
+  .main {
+    display: flex;
+    padding: 10px;
+    flex: 1;
+  }
+
+  .text-container h2 {
+    max-width: 520px;
+    line-height: 5.5rem;
+    font-size: 4rem;
+  }
+
+  .text-container p {
+    max-width: 350px;
+    line-height: 2.25rem;
+    font-size: 1.5rem;
+  }
+
+  .footer p {
+    font-size: 1rem;
+  }
+}
